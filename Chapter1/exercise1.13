@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class Exercise007 {
+
+    float DAsumulate(float a, float b, float c, float d) {
+        float D = a * d - b * c;
+        return D;
+    }
+
+    float D1asumulate(float e, float d, float b, float f) {
+        float D1 = e * d - b * f;
+        return D1;
+    }
+
+    float D2asumulate(float a, float f, float e, float c) {
+        float D2 = a * f - e * c;
+        return D2;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Exercise007 matrix = new Exercise007();
+        float a, b, c, d, e, f;
+        System.out.println("|a b e|");
+        System.out.println("|c d f|");
+        System.out.println("pelase input the element from 'a' to 'e' then 'c' to 'f'");
+        a = sc.nextFloat();
+        b = sc.nextFloat();
+        e = sc.nextFloat();
+        c = sc.nextFloat();
+        d = sc.nextFloat();
+        f = sc.nextFloat();
+        float x = matrix.D1asumulate(e, d, b, f) / matrix.DAsumulate(a, b, c, d);
+        float y = matrix.D2asumulate(a, f, e, c) / matrix.DAsumulate(a, b, c, d);
+        System.out.println("The linear system of equations has two residues,they are " + x + "  " + y);
+    }
+}
