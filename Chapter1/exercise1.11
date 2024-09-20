@@ -1,1 +1,30 @@
 
+import java.util.Scanner;
+
+public class Exercise006 {
+    int timeTrans(int years, int days) {
+        int times = 365 * years * 24 * 60 + days * 24 * 60;
+        return times;
+    }
+
+    int populationAsumulate(int times, int currentPopulation) {
+        int birthPeople = times / 7;
+        int deadPeople = times / 13;
+        int immigrant = times / 45;
+        int nowPopulation = birthPeople + immigrant - deadPeople + currentPopulation;
+        return nowPopulation;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Please input the preived years :");
+        int years = sc.nextInt();
+        System.out.println("please input the current population :");
+        int currentPopulation = sc.nextInt();
+        Exercise006 naturePopulation = new Exercise006();
+        int preivedPopulation = naturePopulation.populationAsumulate(naturePopulation.timeTrans(years, 0),
+                currentPopulation);
+        System.out.println("The preive population is " + preivedPopulation + " in " + years + " years");
+
+    }
+}
