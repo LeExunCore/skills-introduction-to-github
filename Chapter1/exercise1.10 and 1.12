@@ -47,7 +47,7 @@ public class Exercise005 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("The runer has run " + "__(milo)");
+        System.out.println("The runer has run " + "__(mile)");
         float runLenth = sc.nextFloat();
         System.out.println("The time is __(hours)__(minutes)__(seconds)");
         int hours = sc.nextInt();
