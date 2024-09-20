@@ -1,1 +1,62 @@
+import java.util.Scanner;
 
+public class Exercise004 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+      System.out.println("Exercise1.1");
+        System.out.println("Welcome to Java");
+        System.out.println("Welcome to Computer Science");
+        System.out.println(" Programming is fun");
+        System.out.println("Exercise1.2");
+      System.out.println(" Welcome to Java");
+        System.out.println(" Welcome to Java");
+        System.out.println(" Welcome to Java");
+        System.out.println(" Welcome to Java");
+        System.out.println(" Welcome to Java");
+      System.out.println("Exercise1.3");
+        System.out.println("     J" + "     A " + "   V     V" + "   A   ");
+        System.out.println("     J" + "    A A" + "    V   V" + "   A A");
+        System.out.println(" J   J" + "   AAAAA" + "    V V" + "   AAAAA");
+        System.out.println("  J  J" + "  A     A" + "    V " + "  A     A");
+      System.out.println("Exercise1.4");
+        System.out.println("a       a^2      a^3");
+        System.out.println("1       1         1   ");
+        System.out.println("2       4         8    ");
+        System.out.println("3       9         27 ");
+        System.out.println("4       16        64   ");
+      System.out.println("Exercise1.5");
+        double a = (9.5 * 4.5 - 2.5 * 3);
+        double b = (45.5 - 3.5);
+        double c = a / b;
+        System.out.println("The result is " + c);
+      System.out.println("Exercise1.6");
+        int sum = 0;
+        for (int i = 1; i < 10; i++) {
+            sum += i;
+        }
+        System.out.println("The result is " + sum);
+      System.out.println("Exercise1.7");
+        double k = (1.0 - 1 / 3 + 1 / 5 - 1 / 7 + 1 / 9 - 1 / 11);
+        k = 4 * k;
+        double e = (1.0 - 1 / 3 + 1 / 5 - 1 / 7 + 1 / 9 - 1 / 11 + 1 / 13);
+        e = 4 * e;
+        System.out.println("The first result is " + e + "   The second result is " + k);
+      System.out.println("Exercise1.8");
+        double roundArea, roundpreimeter;
+        System.out.println("Please input the radius:");
+        double radius = sc.nextDouble();
+        roundArea = radius * radius * Math.PI;
+        roundpreimeter = 2 * radius * Math.PI;
+        System.out.println("The area is " + roundArea);
+        System.out.println("The preimter is " + roundpreimeter);
+      System.out.println("Exercise1.9");
+        double area, width, height;
+        System.out.println("请输入矩阵的长：");
+        height = sc.nextDouble();
+        System.out.println("请输入矩阵的宽：");
+        width = sc.nextDouble();
+        area = width * height;
+        System.out.println("The area is :" + area);
+        System.out.println("Exercise1.10");
+    }
+}
